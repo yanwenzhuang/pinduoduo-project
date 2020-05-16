@@ -64,9 +64,7 @@ export class ScrollableTabComponent implements OnInit {
     title: '家具',
     link: ''
   }];
-  handleSelection(index: number){
-    this.selectedIndex = index;
-  }
+  
 
   ngOnInit() {
   }
