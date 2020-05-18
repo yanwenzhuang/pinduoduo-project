@@ -1,8 +1,18 @@
 <ul>
   <li *ngFor="let item of menus; let i = index">
-    <a href="#" [class.active]="i === selectedIndex" (click)="handleSelectIndex(i)">
-      {{item.title}}
+    <a
+      href="#"
+      [ngStyle]="{ color: i === selectedIndex ? titleActiveColor : titleColor }"
+      (click)="handleSelectIndex(i)"
+    >
+      {{ item.title }}
     </a>
-    <span class="indicator" *ngIf="i === selectedIndex"></span>
+    <span
+      class="indicator"
+      *ngIf="i === selectedIndex"
+      [ngStyle]="{ 'background-color': indicatorColor }"
+    >
+    </span>
   </li>
 </ul>
+

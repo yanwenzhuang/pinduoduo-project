@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-pinduoduoproject-dev-103000-authRole",
+            "UnauthRoleArn": "arn:aws:iam::456370664007:role/amplify-pinduoduoproject-dev-103000-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::456370664007:role/amplify-pinduoduoproject-dev-103000-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-pinduoduoproject-dev-103000-deployment",
+            "UnauthRoleName": "amplify-pinduoduoproject-dev-103000-unauthRole",
+            "StackName": "amplify-pinduoduoproject-dev-103000",
+            "StackId": "arn:aws:cloudformation:us-east-1:456370664007:stack/amplify-pinduoduoproject-dev-103000/518a93d0-97e6-11ea-9fc3-0a140a53308d",
+            "AmplifyAppId": "dl7hbw3so4c9c"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "dl7hbw3so4c9c",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}
