@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TopMenu, ImageSlider } from './components';
+import { read } from 'fs';
 
 @Component({
   selector: 'app-root',
@@ -85,7 +86,9 @@ export class AppComponent {
     link: '',
     caption: ''
   }];
+
   handleTabSelected(topMenu: TopMenu){
     console.log(topMenu);
   }
+
 }

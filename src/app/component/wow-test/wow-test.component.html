@@ -1,0 +1,4 @@
+<p>wow-test works!</p>
+<qr-code [value]="test" size="300"  background="#f2f1f1" padding="30"></qr-code>
+<input type="file" accept="image/png" (change)="fileChange($event.target.files)" />
+<img *ngIf="imgURL" [src]="imgURL">

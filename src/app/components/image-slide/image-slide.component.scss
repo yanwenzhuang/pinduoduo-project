@@ -4,6 +4,15 @@
   .image-slider{
     display: flex;
     overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align:start;
   }
   .nav-section{
     position: absolute;
@@ -24,6 +33,9 @@
       text-decoration: none;
       border-radius: 50%;
       margin: 5px;
+    }
+    .slide-button-select{
+      background-color: red;
     }
   }
 }
