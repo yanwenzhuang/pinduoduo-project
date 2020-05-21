@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { TopMenu, ImageSlider } from './components';
-import { read } from 'fs';
+import { TopMenu, ImageSlider } from './shared/components';
 
 @Component({
   selector: 'app-root',
