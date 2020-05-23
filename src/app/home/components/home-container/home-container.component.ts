@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TopMenu, ImageSlider } from 'src/app/shared/components';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-container',
@@ -7,60 +8,83 @@ import { TopMenu, ImageSlider } from 'src/app/shared/components';
   styleUrls: ['./home-container.component.scss']
 })
 export class HomeContainerComponent  {
+  constructor(private router: Router){
+
+  }
 
   topMenus: TopMenu[] = [{
     title: '热门',
-    link: ''
+    link: 'hot',
+    id: 1
   },{
     title: '男装',
-    link: ''
+    link: 'men',
+    id: 2
   },{
     title: '百货',
-    link: ''
+    link: 'store',
+    id: 3
   },{
     title: '运动',
-    link: ''
+    link: 'sport',
+    id: 4
   },{
     title: '手机',
-    link: ''
+    link: 'phone',
+    id: 5
   },{
     title: '家纺',
-    link: ''
+    link: 'home',
+    id: 6
   },{
     title: '食品',
-    link: ''
+    link: 'food',
+    id: 7
   },{
     title: '电器',
-    link: ''
+    link: 'eletrical',
+    id: 8
   },
   {
     title: '鞋包',
-    link: ''
+    link: 'shoes',
+    id: 9
   },{
     title: '水果',
-    link: ''
+    link: 'fruit',
+    id: 10
   },{
     title: '汽车',
-    link: ''
+    link: 'car',
+    id: 11
   },{
     title: '电脑',
-    link: ''
+    link: 'computer',
+    id: 12
   },{
     title: '内衣',
-    link: ''
+    link: 'wear',
+    id: 13
   },{
     title: '家装',
-    link: ''
+    link: 'decoration',
+    id: 14
   },{
     title: '母婴',
-    link: ''
+    link: 'mom',
+    id: 15
   },{
     title: '美妆',
-    link: ''
+    link: 'beauty',
+    id: 16
   },{
     title: '家具',
-    link: ''
+    link: 'furniture',
+    id: 17
   }];
  
+  handleTabSelected(topMenu: TopMenu){
+    this.router.navigate(['home',topMenu.link]);
+  }
 
 }

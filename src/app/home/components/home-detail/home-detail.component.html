@@ -1,2 +1,7 @@
-<app-image-slide [sliders]="imageSliders"></app-image-slide>
-<app-horizontal-grid></app-horizontal-grid>
+<div *ngIf="selectTabLink === 'hot' else other">
+  <app-image-slide [sliders]="imageSliders"></app-image-slide>
+  <app-horizontal-grid></app-horizontal-grid>
+</div>
+<ng-template #other>
+    other work!
+</ng-template>

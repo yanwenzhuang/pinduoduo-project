@@ -1,7 +1,6 @@
 <ul>
   <li *ngFor="let item of menus; let i = index">
     <a
-      href="#"
       [ngStyle]="{ color: i === selectedIndex ? titleActiveColor : titleColor }"
       (click)="handleSelectIndex(i)"
     >

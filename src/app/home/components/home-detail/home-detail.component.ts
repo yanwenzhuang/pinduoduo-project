@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TopMenu, ImageSlider } from 'src/app/shared/components';
+import { ImageSlider } from 'src/app/shared/components';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home-detail',
@@ -32,13 +33,14 @@ export class HomeDetailComponent implements OnInit {
     link: '',
     caption: ''
   }];
-
-  handleTabSelected(topMenu: TopMenu){
-    console.log(topMenu);
-  }
-  constructor() { }
+  selectTabLink;
+  
+  constructor(private router: ActivatedRoute) { }
 
   ngOnInit() {
+    this.router.paramMap.subscribe(params =>{
+      this.selectTabLink = params.get('tabLink');
+    })
   }
 
 }
